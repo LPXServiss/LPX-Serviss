@@ -26,7 +26,22 @@ p, a, text {
 }
 
 
-.grid {
+
+
+
+
+
+
+
+
+/*Lielie ekrāni*/
+
+
+@media screen and (min-width: 960px){ 
+  
+
+
+  .grid {
   display: grid;
   justify-content: center; 
   height: 100vh;
@@ -36,13 +51,6 @@ p, a, text {
 
 
 }
-
-
-
-
-
-
-
   .griditem1 {
 
     align-content: center;
@@ -52,6 +60,61 @@ p, a, text {
     grid-column-start:  1;
     grid-column-end:  4;
     grid-row-start: 1;
+      }
+  .griditem1 p{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .griditem1 img{
+   margin: 0;
+   
+ }
+  
+  .griditem2 div{
+
+  padding-top: 20px;
+  
+  }
+
+  .griditem2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ grid-column-start: 2;
+  grid-row-start:  2;
+
+  }
+
+
+
+}
+
+
+/*mazi ekrāni*/
+@media screen and (max-width: 959px){ 
+
+  .grid {
+  display: grid;
+  justify-content: center; 
+  height: 100vh;
+  grid-template-columns:1fr ;
+  grid-template-rows:  3fr 1fr;
+
+
+
+}
+  .griditem1 {
+
+    align-content: center;
+    background-image: url("dayne_small.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    grid-row-start: 1;
+    
 
   }
   .griditem1 p{
@@ -68,40 +131,19 @@ p, a, text {
   .griditem2 div{
 
   padding-top: 20px;
-  padding-right: 40px;
+  
   }
 
   .griditem2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
- grid-column-start: 2;
   grid-row-start:  2;
 
   }
 
 
-@media screen and (min-width: 960px){ 
-
-.griditem1 {
-
    
-    background-image: url("dayne.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   
-
-  }
-}
-
-@media screen and (max-width: 959px){ 
-
-.griditem1 {
-
-   
-    background-image: url("dayne_small.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   
-
-  }
 }
 
